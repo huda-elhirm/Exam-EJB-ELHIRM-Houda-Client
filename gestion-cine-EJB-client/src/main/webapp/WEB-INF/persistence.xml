@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.2">
+    <persistence-unit name="gestion_cine_ejb" transaction-type="JTA">
+        <jta-data-source>java:/YourDataSource</jta-data-source>
+
+        <properties>
+            <!-- MySQL Database Connection Properties -->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:4306/gestion_cine_ejb?useSSL=false&amp;serverTimezone=UTC"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="root"/>
+
+        </properties>
+    </persistence-unit>
+</persistence>
